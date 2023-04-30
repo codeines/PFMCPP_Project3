@@ -370,15 +370,16 @@ Define an object that is made of 5 sub-objects.
 
 Thing 10) Elephant
 5 properties:
-    1) 
-    2) 
-    3) 
-    4) 
-    5) 
+    1) Appendages
+    2) Personality
+    3) Behaviors
+    4) Strengths
+    5) Weaknesses
 3 things it can do:
-    1) 
-    2) 
-    3) 
+    1) raise young
+    2) find food
+    3) travel great distances
+    
  */
 
  /*
