@@ -203,7 +203,7 @@ Thing 1) Restaurant
     2) number of staff members
     3) number of customers per week
     4) amount of profit per week
-    5) number of hours open
+    5) number of hours open per week
 3 things it can do:
     1) prepare menu item meals
     2) make money
@@ -303,6 +303,7 @@ Example:
     When you choose your 5 smaller parts, remember that each of 
     these 5 Sub Objects will need to be defined with 5 primitive 
     properties and 3 actions EACH.
+
 */
 
 /*
@@ -319,6 +320,35 @@ example:
         Brightness (double)
         area in cm2 (int)
         brand (std::string)
+
+Restaurant:
+    Number of Menu Items (int)
+    Number of Staff Members (int)
+    Number of Customers Per Week (int)
+    Amount of Profit Per Week (double)
+    Number of Hours Open Per Week (int)
+
+Drumset Playing:
+    Number of Drums (int)
+    Style of Music (std::string)
+    Tempo of the Music (float)
+    Number of Techniques Used (int)
+    Duration of Play (float)
+
+Romantic Relationship:
+    Number of Good Times (int)
+    Number of Bad Times (int)
+    Match Compatability Scale (float)
+    Sex Enjoyment Scale (float)
+    Number of Dates (int)
+
+Soccor Team:
+    Player Skill Level (double)
+    Pool Selection Size (int)
+    League (std::string)
+    Amount of Funding (float)
+    Number of Players (int)
+
 */
 
 /*
@@ -338,17 +368,17 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10)
+Thing 10) Elephant
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) 
+    2) 
+    3) 
+    4) 
+    5) 
 3 things it can do:
-    1)
-    2)
-    3)
+    1) 
+    2) 
+    3) 
  */
 
  /*
