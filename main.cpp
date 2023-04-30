@@ -197,53 +197,53 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
+Thing 1) Restaurant
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of menu items
+    2) number of staff members
+    3) number of customers per week
+    4) amount of profit per week
+    5) number of hours open
 3 things it can do:
-    1)
-    2)
-    3)
+    1) prepare menu item meals
+    2) make money
+    3) pay taxes
 
-Thing 2)
+Thing 2) Drumset Playing
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of drums
+    2) style of music
+    3) tempo of the music
+    4) number of techniques used
+    5) duration of play
 3 things it can do:
-    1)
-    2)
-    3)
+    1) make music
+    2) apply drum set technique
+    3) create consistent body motions
 
-Thing 3)
+Thing 3) Romantic Relationship
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of good times
+    2) number of bad times
+    3) match compatability scale
+    4) sex enjoyment scale
+    5) number of dates
 3 things it can do:
-    1)
-    2)
-    3)
+    1) engage in conversation
+    2) go on a date
+    3) have sex
 
-Thing 4)
+Thing 4) Soccor Team
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) player skill level
+    2) pool selection size
+    3) league
+    4) amount of funding
+    5) number of players
 3 things it can do:
-    1)
-    2)
-    3)
+    1) participate in a soccor tournament
+    2) apply detailed game strategies
+    3) develop motor function
 */
 
 /*
