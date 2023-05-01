@@ -303,7 +303,6 @@ Example:
     When you choose your 5 smaller parts, remember that each of 
     these 5 Sub Objects will need to be defined with 5 primitive 
     properties and 3 actions EACH.
-
 */
 
 /*
@@ -348,7 +347,6 @@ Soccor Team:
     League (std::string)
     Amount of Funding (float)
     Number of Players (int)
-
 */
 
 /*
@@ -379,7 +377,6 @@ Thing 10) Elephant
     1) raise young
     2) find food
     3) travel great distances
-    
  */
 
  /*
@@ -550,6 +547,41 @@ example:
         Brightness (double)
         width in cm (int)
         height in cm (int)
+
+Appendages:
+    Number of Legs (int)
+    Length of Trunk (float)
+    Trunk Dexterity Level (double)
+    Vibration Sensitivity (double)
+    Tusk Length (float)
+
+Personality:
+    Social Skill Level (float)
+    Intelligence Level (double)
+    Number of Strong Bonds with Other Elephants (int)
+    Leadership Propensity Scale (float)
+    Playfulness Scale (double)
+
+Behaviors:
+    Forage (std::string)
+    Run Speed (int)
+    Teaching Abilitiy Level (double)
+    Learning Ability Level (double)
+    Fight Strength (float)
+
+Strengths:
+    Body Size (char)
+    Elemental Resistance (float)
+    Level of Bond Strength (float)
+    Communication Method (std::string)
+    Sense Perception Level (double)
+
+Weaknesses:
+    Necessary Caloric Intake Amount (double)
+    Likeliness to be Swept Away by a River (float)
+    Number of Broken Tusks (int)
+    Required Number of Learned Behaviors for Survival (int)
+    Heat Tolerance Level (float)
 */
 
 /*
