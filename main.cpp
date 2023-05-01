@@ -466,65 +466,65 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
+Thing 5) Appendages
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Number of Legs
+    2) Length of Trunk
+    3) Trunk Dexterity Level
+    4) Vibration Sensitivity
+    5) Tusk Length
 3 things it can do:
-    1)
-    2)
-    3)
+    1) communicate long distances through vibration
+    2) defend their young with their tusks
+    3) eat food with their trunk
 
-Thing 6)
+Thing 6) Personality
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Social Skill Level
+    2) Intelligence Level
+    3) Number of Strong Bonds with Other Elephants
+    4) Leadership Propensity Scale
+    5) Playfulness Scale
 3 things it can do:
-    1)
-    2)
-    3)
+    1) engage in play with other elephants
+    2) lead the family to food and water
+    3) respond to danger with fight or flight
 
-Thing 7)
+Thing 7) Behaviors
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Forage
+    2) Run Speed
+    3) Teaching Abilitiy Level
+    4) Learning Ability Level
+    5) Fight Strength
 3 things it can do:
-    1)
-    2)
-    3)
+    1) find specific plants that make up their diet
+    2) teach vital survival behaviors to other elephants
+    3) escape danger
 
-Thing 8)
+Thing 8) Strengths
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Body Size
+    2) Elemental Resistance
+    3) Level of Bond Strength
+    4) Communication Method
+    5) Sense Perception Level
 3 things it can do:
-    1)
-    2)
-    3)
+    1) maintain family health through family bonds
+    2) commands a higher place on the food chain
+    3) senses weather patterns to inform travel direction
 
-Thing 9)
+Thing 9) Weaknesses
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Necessary Caloric Intake Amount
+    2) Likeliness to be Swept Away by a River
+    3) Number of Broken Tusks
+    4) Required Number of Learned Behaviors for Survival
+    5) Heat Tolerance Level
 3 things it can do:
-    1)
-    2)
-    3)
+    1) get swept away in a large river depending on size
+    2) die of starvation
+    3) pass out from overheating
  */
 
 /*
