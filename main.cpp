@@ -442,7 +442,7 @@ Thing 1) Restaurant
     2) make money
     3) pay taxes
 
-Thing 2) Drumset Playing
+Thing 2) Drummer
 5 properties:
     1) Number of Drums (int)
     2) Style of Music (std::string)
