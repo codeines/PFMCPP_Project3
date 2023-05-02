@@ -128,7 +128,6 @@ Main Object: Car Interior
         Name 2 actions that the [Sub Object] can do:
             1) adjust seat position
             2) adjust headrest position
-
 */
 
 /*
@@ -144,6 +143,7 @@ Be sure to make the commit message meaningful.
 ************************************ PART 1B ************************************
 *********************************************************************************
 */
+
 /*
 =================
 Part 1b - Step 1: Lesson
@@ -196,54 +196,6 @@ Part 1b - Step 2: Assignment
         primitives.
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
-
-Thing 1) Restaurant
-5 properties:
-    1) number of menu items
-    2) number of staff members
-    3) number of customers per week
-    4) amount of profit per week
-    5) number of hours open per week
-3 things it can do:
-    1) prepare menu item meals
-    2) make money
-    3) pay taxes
-
-Thing 2) Drumset Playing
-5 properties:
-    1) number of drums
-    2) style of music
-    3) tempo of the music
-    4) number of techniques used
-    5) duration of play
-3 things it can do:
-    1) make music
-    2) apply drum set technique
-    3) create consistent body motions
-
-Thing 3) Romantic Relationship
-5 properties:
-    1) number of good times
-    2) number of bad times
-    3) match compatability scale
-    4) sex enjoyment scale
-    5) number of dates
-3 things it can do:
-    1) engage in conversation
-    2) go on a date
-    3) have sex
-
-Thing 4) Soccor Team
-5 properties:
-    1) player skill level
-    2) pool selection size
-    3) league
-    4) amount of funding
-    5) number of players
-3 things it can do:
-    1) participate in a soccor tournament
-    2) apply detailed game strategies
-    3) develop motor function
 */
 
 /*
@@ -253,11 +205,13 @@ Part 1b - Step 3: Commit
 Now that you've made changes to the code, make a commit!
 Be sure to make the commit message meaningful.
 */
+
 /*
 *********************************************************************************
 ************************************ PART 1C ************************************
 *********************************************************************************
 */
+
  /*
 =================
 Part 1c - Step 1: Lesson
@@ -319,34 +273,6 @@ example:
         Brightness (double)
         area in cm2 (int)
         brand (std::string)
-
-Restaurant:
-    Number of Menu Items (int)
-    Number of Staff Members (int)
-    Number of Customers Per Week (int)
-    Amount of Profit Per Week (double)
-    Number of Hours Open Per Week (int)
-
-Drumset Playing:
-    Number of Drums (int)
-    Style of Music (std::string)
-    Tempo of the Music (float)
-    Number of Techniques Used (int)
-    Duration of Play (float)
-
-Romantic Relationship:
-    Number of Good Times (int)
-    Number of Bad Times (int)
-    Match Compatability Scale (float)
-    Sex Enjoyment Scale (float)
-    Number of Dates (int)
-
-Soccor Team:
-    Player Skill Level (double)
-    Pool Selection Size (int)
-    League (std::string)
-    Amount of Funding (float)
-    Number of Players (int)
 */
 
 /*
@@ -365,18 +291,6 @@ Part 1c - Step 4: Assignment
 Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
-
-Thing 10) Elephant
-5 properties:
-    1) Appendages
-    2) Personality
-    3) Behaviors
-    4) Strengths
-    5) Weaknesses
-3 things it can do:
-    1) raise young
-    2) find food
-    3) travel great distances
  */
 
  /*
@@ -392,6 +306,7 @@ Be sure to make the commit message meaningful.
 ************************************ PART 1D ************************************
 *********************************************************************************
 */
+
 /*
 =================
 Part 1d - Step 1: Lesson
@@ -462,66 +377,6 @@ example:
     If #10's first property was 'Engine', then `Thing 5)` will be `Engine`. 
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
-
-Thing 5) Appendages
-5 properties:
-    1) Number of Legs
-    2) Length of Trunk
-    3) Trunk Dexterity Level
-    4) Vibration Sensitivity
-    5) Tusk Length
-3 things it can do:
-    1) communicate long distances through vibration
-    2) defend their young with their tusks
-    3) eat food with their trunk
-
-Thing 6) Personality
-5 properties:
-    1) Social Skill Level
-    2) Intelligence Level
-    3) Number of Strong Bonds with Other Elephants
-    4) Leadership Propensity Scale
-    5) Playfulness Scale
-3 things it can do:
-    1) engage in play with other elephants
-    2) lead the family to food and water
-    3) respond to danger with fight or flight
-
-Thing 7) Behaviors
-5 properties:
-    1) Forage
-    2) Run Speed
-    3) Teaching Abilitiy Level
-    4) Learning Ability Level
-    5) Fight Strength
-3 things it can do:
-    1) find specific plants that make up their diet
-    2) teach vital survival behaviors to other elephants
-    3) escape danger
-
-Thing 8) Strengths
-5 properties:
-    1) Body Size
-    2) Elemental Resistance
-    3) Level of Bond Strength
-    4) Communication Method
-    5) Sense Perception Level
-3 things it can do:
-    1) maintain family health through family bonds
-    2) commands a higher place on the food chain
-    3) senses weather patterns to inform travel direction
-
-Thing 9) Weaknesses
-5 properties:
-    1) Necessary Caloric Intake Amount
-    2) Likeliness to be Swept Away by a River
-    3) Number of Broken Tusks
-    4) Required Number of Learned Behaviors for Survival
-    5) Heat Tolerance Level
-3 things it can do:
-    1) get swept away in a large river depending on size
-    2) die of starvation
-    3) pass out from overheating
  */
 
 /*
@@ -547,41 +402,6 @@ example:
         Brightness (double)
         width in cm (int)
         height in cm (int)
-
-Appendages:
-    Number of Legs (int)
-    Length of Trunk (float)
-    Trunk Dexterity Level (double)
-    Vibration Sensitivity (double)
-    Tusk Length (float)
-
-Personality:
-    Social Skill Level (float)
-    Intelligence Level (double)
-    Number of Strong Bonds with Other Elephants (int)
-    Leadership Propensity Scale (float)
-    Playfulness Scale (double)
-
-Behaviors:
-    Forage (std::string)
-    Run Speed (int)
-    Teaching Abilitiy Level (double)
-    Learning Ability Level (double)
-    Fight Strength (float)
-
-Strengths:
-    Body Size (char)
-    Elemental Resistance (float)
-    Level of Bond Strength (float)
-    Communication Method (std::string)
-    Sense Perception Level (double)
-
-Weaknesses:
-    Necessary Caloric Intake Amount (double)
-    Likeliness to be Swept Away by a River (float)
-    Number of Broken Tusks (int)
-    Required Number of Learned Behaviors for Survival (int)
-    Heat Tolerance Level (float)
 */
 
 /*
@@ -609,12 +429,127 @@ MOVE THEM to the space below this block comment and put them in numerical order
     simply CUT and PASTE them in the space provided below:
 */
 
+/*
+Thing 1) Restaurant
+5 properties:
+    1) Number of Menu Items (int)
+    2) Number of Staff Members (int)
+    3) Number of Customers per Week (int)
+    4) Amount of Profit per Week (double)
+    5) Number of Hours Open per Week (int)
+3 things it can do:
+    1) prepare menu item meals
+    2) make money
+    3) pay taxes
 
+Thing 2) Drumset Playing
+5 properties:
+    1) Number of Drums (int)
+    2) Style of Music (std::string)
+    3) Tempo of the Music (float)
+    4) Number of Techniques Used (int)
+    5) Duration of Play (float)
+3 things it can do:
+    1) make music
+    2) apply drum set technique
+    3) create consistent body motions
 
+Thing 3) Romantic Relationship
+5 properties:
+    1) Number of Good Times (int)
+    2) Number of Bad Times (int)
+    3) Match Compatability Scale (float)
+    4) Sex Enjoyment Scale (float)
+    5) Number of Dates (int)
+3 things it can do:
+    1) engage in conversation
+    2) go on a date
+    3) have sex
 
+Thing 4) Soccor Team
+5 properties:
+    1) Player Skill Level (double)
+    2) Pool Selection Size (int)
+    3) League (std::string)
+    4) Amount of Funding (float)
+    5) Number of Players (int)
+3 things it can do:
+    1) participate in a soccor tournament
+    2) apply detailed game strategies
+    3) develop motor function
 
+Thing 5) Appendages
+5 properties:
+    1) Number of Legs (int)
+    2) Length of Trunk (float)
+    3) Trunk Dexterity Level (double)
+    4) Vibration Sensitivity (double)
+    5) Tusk Length (float)
+3 things it can do:
+    1) communicate long distances through vibration
+    2) defend their young with their tusks
+    3) eat food with their trunk
 
+Thing 6) Personality
+5 properties:
+    1) Social Skill Level (float)
+    2) Intelligence Level (double)
+    3) Number of Strong Bonds with Other Elephants (int)
+    4) Leadership Propensity Scale (float)
+    5) Playfulness Scale (double)
+3 things it can do:
+    1) engage in play with other elephants
+    2) lead the family to food and water
+    3) respond to danger with fight or flight
 
+Thing 7) Behaviors
+5 properties:
+    1) Forage (std::string)
+    2) Run Speed (int)
+    3) Teaching Abilitiy Level (double)
+    4) Learning Ability Level (double)
+    5) Fight Strength (float)
+3 things it can do:
+    1) find specific plants that make up their diet
+    2) teach vital survival behaviors to other elephants
+    3) escape danger
+
+Thing 8) Strengths
+5 properties:
+    1) Body Size (char)
+    2) Elemental Resistance (float)
+    3) Level of Bond Strength (float)
+    4) Communication Method (std::string)
+    5) Sense Perception Level (double)
+3 things it can do:
+    1) maintain family health through family bonds
+    2) commands a higher place on the food chain
+    3) senses weather patterns to inform travel direction
+
+Thing 9) Weaknesses
+5 properties:
+    1) Necessary Caloric Intake Amount (double)
+    2) Likeliness to be Swept Away by a River (float)
+    3) Number of Broken Tusks (int)
+    4) Required Number of Learned Behaviors for Survival (int)
+    5) Heat Tolerance Level (float)
+3 things it can do:
+    1) get swept away in a large river depending on size
+    2) die of starvation
+    3) pass out from overheating
+
+Thing 10) Elephant
+5 properties:
+    1) Appendages
+    2) Personality
+    3) Behaviors
+    4) Strengths
+    5) Weaknesses
+3 things it can do:
+    1) raise young
+    2) find food
+    3) travel great distances
+*/
 
 /*
 =================
