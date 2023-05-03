@@ -447,10 +447,15 @@ struct Restaurant
 {
     //5 properties:
     //    - number of menu items
+    int numMenuItems = 16;
     //    - number of staff members
+    int numStaffMembers = 6;
     //    - number of customers per week
+    int numCustomersPerWeek = 115;
     //    - amount of profit per week
+    double amountProfitPerWeek = 1123.52;
     //    - number of hours open per week
+    int numHoursOpenPerWeek = 60;
     //3 things it can do:
     //    - prepare menu item meals
     //    - make money
@@ -475,10 +480,15 @@ struct Drummer
 {
     //5 properties:
     //    - number of drums
+    int numDrums = 10;
     //    - style of music
+    std::string styleMusic = "Rock";
     //    - tempo of the music
+    float tempoMusic = 116.5f;
     //    - number of techniques used
+    int numTechniquesUsed = 5;
     //    - duration of play
+    float durationPlay = 2.33f;
     //3 things it can do:
     //    - make music
     //    - apply drum set technique
@@ -503,10 +513,15 @@ struct RomanticRelationship
 {
     //5 properties:
     //    - number of good times
+    int numGoodTimes = 88;
     //    - number of bad times
+    int numBadTimes = 11;
     //    - match compatability scale
+    float matchCompatabilityScale = 43.21f;
     //    - sex enjoyment scale
+    float sexEnjoymentScale = 92.33f;
     //    - number of dates
+    int numbDates = 99;
     //3 things it can do:
     //    - engage in conversation
     //    - go on a date
@@ -531,10 +546,15 @@ struct SoccorTeam
 {
     //5 properties:
     //    - player skill level
+    double playerSkillLevel = 228.12;
     //    - pool selection size
+    int poolSelectionSize = 101;
     //    - league
+    std::string league = "World Cup";
     //    - amount of funding
+    float amountFunding = 22000;
     //    - number of players
+    int numPlayers = 24;
     //3 things it can do:
     //    - participate in a soccor tournament
     //    - apply detailed game strategies
@@ -559,10 +579,15 @@ struct Appendages
 {
     //5 properties:
     //    - number of legs
+    int numLegs = 4;
     //    - length of trunk
+    float lengthTrunk = 14.76f;
     //    - trunk dexterity level
+    double trunkDexterityLevel = 555.42;
     //    - vibration sensitivity
+    double vibrationSensitivity = 773.12;
     //    - tusk length
+    float tuskLength = 12.13f;
     //3 things it can do:
     //    - communicate long distances through vibration
     //    - defend their young with their tusks
@@ -587,10 +612,15 @@ struct Personality
 {
     //5 properties:
     //    - social skill level
+    float socialSkillLevel = 54.1f;
     //    - intelligence level
+    double intelligenceLevel = 84.11;
     //    - number of strong bonds with other elephants
+    int numStrongBondsWithOtherElephants = 4;
     //    - leadership propensity scale
+    float leadershipPropensityScale = 66.01f;
     //    - playfulness scale
+    double playfulnessScale = 65.33f;
     //3 things it can do:
     //    - engage in play with other elephants
     //    - lead the family to food and water
@@ -615,10 +645,15 @@ struct Behaviors
 {
     //5 properties:
     //    - forage
+    std::string forage = "Leaves";
     //    - run speed
+    int runSpeed = 11;
     //    - teaching abilitiy level
+    double teachingAbilityLevel = 90.09;
     //    - learning ability level
+    double learningAbilityLevel = 77.88;
     //    - fight strength
+    float fightStrength = 44.9f;
     //3 things it can do:
     //    - find specific plants that make up their diet
     //    - teach vital survival behaviors to other elephants
@@ -643,10 +678,15 @@ struct Strengths
 {
     //5 properties:
     //    - body size
+    char bodySize = 'A';
     //    - elemental resistance
+    float elementalResistance = 667.5f;
     //    - level of bond strength
+    float levelBondStrenth = 45.43f;
     //    - communication method
+    std::string communicationMethod = "Modeling";
     //    - sense perception level
+    double sensePerceptionLevel = 989.4;
     //3 things it can do:
     //    - maintain family health through family bonds
     //    - commands a higher place on the food chain
@@ -671,10 +711,15 @@ struct Weaknesses
 {
     //5 properties:
     //    - necessary caloric intake amount
+    double necessaryCaloricIntakeAmount = 2250.5;
     //    - likeliness to be swept away by a river
+    float likelinessSweptAwayByRiver = 43.11f;
     //    - number of broken tusks
+    int numBrokenTusks = 1;
     //    - required number of learned behaviors for survival
+    int requiredNumberLearnedBehaviorsForSurvival = 15;
     //    - heat tolerance level
+    float heatToleranceLevel = 84.6f;
     //3 things it can do:
     //    - get swept away in a large river depending on size
     //    - die of starvation
