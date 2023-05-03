@@ -445,7 +445,16 @@ Thing 1) Restaurant
 struct Restaurant
 
 {
-
+    //5 properties:
+    //    - number of menu items
+    //    - number of staff members
+    //    - number of customers per week
+    //    - amount of profit per week
+    //    - number of hours open per week
+    //3 things it can do:
+    //    - prepare menu item meals
+    //    - make money
+    //    - pay taxes
 };
 
 /*
@@ -464,7 +473,16 @@ Thing 2) Drummer
 struct Drummer
 
 {
-
+    //5 properties:
+    //    - number of drums
+    //    - style of music
+    //    - tempo of the music
+    //    - number of techniques used
+    //    - duration of play
+    //3 things it can do:
+    //    - make music
+    //    - apply drum set technique
+    //    - create consistent body motions
 };
 
 /*
@@ -483,7 +501,16 @@ Thing 3) Romantic Relationship
 struct RomanticRelationship
 
 {
-
+    //5 properties:
+    //    - number of good times
+    //    - number of bad times
+    //    - match compatability scale
+    //    - sex enjoyment scale
+    //    - number of dates
+    //3 things it can do:
+    //    - engage in conversation
+    //    - go on a date
+    //    - have sex
 };
 
 /*
@@ -502,7 +529,16 @@ Thing 4) Soccor Team
 struct SoccorTeam
 
 {
-
+    //5 properties:
+    //    - player skill level
+    //    - pool selection size
+    //    - league
+    //    - amount of funding
+    //    - number of players
+    //3 things it can do:
+    //    - participate in a soccor tournament
+    //    - apply detailed game strategies
+    //    - develop motor function
 };
 
 /*
@@ -521,7 +557,16 @@ Thing 5) Appendages
 struct Appendages
 
 {
-
+    //5 properties:
+    //    - number of legs
+    //    - length of trunk
+    //    - trunk dexterity level
+    //    - vibration sensitivity
+    //    - tusk length
+    //3 things it can do:
+    //    - communicate long distances through vibration
+    //    - defend their young with their tusks
+    //    - eat food with their trunk
 };
 
 /*
@@ -540,7 +585,16 @@ Thing 6) Personality
 struct Personality
 
 {
-
+    //5 properties:
+    //    - social skill level
+    //    - intelligence level
+    //    - number of strong bonds with other elephants
+    //    - leadership propensity scale
+    //    - playfulness scale
+    //3 things it can do:
+    //    - engage in play with other elephants
+    //    - lead the family to food and water
+    //    - respond to danger with fight or flight
 };
 
 /*
@@ -559,7 +613,16 @@ Thing 7) Behaviors
 struct Behaviors
 
 {
-
+    //5 properties:
+    //    - forage
+    //    - run speed
+    //    - teaching abilitiy level
+    //    - learning ability level
+    //    - fight strength
+    //3 things it can do:
+    //    - find specific plants that make up their diet
+    //    - teach vital survival behaviors to other elephants
+    //    - escape danger
 };
 
 /*
@@ -578,7 +641,16 @@ Thing 8) Strengths
 struct Strengths
 
 {
-
+    //5 properties:
+    //    - body size
+    //    - elemental resistance
+    //    - level of bond strength
+    //    - communication method
+    //    - sense perception level
+    //3 things it can do:
+    //    - maintain family health through family bonds
+    //    - commands a higher place on the food chain
+    //    - senses weather patterns to inform travel direction
 };
 
 /*
@@ -597,7 +669,16 @@ Thing 9) Weaknesses
 struct Weaknesses
 
 {
-
+    //5 properties:
+    //    - necessary caloric intake amount
+    //    - likeliness to be swept away by a river
+    //    - number of broken tusks
+    //    - required number of learned behaviors for survival
+    //    - heat tolerance level
+    //3 things it can do:
+    //    - get swept away in a large river depending on size
+    //    - die of starvation
+    //    - pass out from overheating
 };
 
 /*
@@ -616,7 +697,16 @@ Thing 10) Elephant
 struct Elephant
 
 {
-
+    //5 properties:
+    //    - appendages
+    //    - personality
+    //    - behaviors
+    //    - strengths
+    //    - weaknesses
+    //3 things it can do:
+    //    - raise young
+    //    - find food
+    //    - travel great distances
 };
 
 /*
