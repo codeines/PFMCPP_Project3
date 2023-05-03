@@ -441,7 +441,14 @@ Thing 1) Restaurant
     1) prepare menu item meals
     2) make money
     3) pay taxes
+*/
+struct Restaurant
 
+{
+
+};
+
+/*
 Thing 2) Drummer
 5 properties:
     1) Number of Drums (int)
@@ -453,7 +460,14 @@ Thing 2) Drummer
     1) make music
     2) apply drum set technique
     3) create consistent body motions
+*/
+struct Drummer
 
+{
+
+};
+
+/*
 Thing 3) Romantic Relationship
 5 properties:
     1) Number of Good Times (int)
@@ -465,7 +479,14 @@ Thing 3) Romantic Relationship
     1) engage in conversation
     2) go on a date
     3) have sex
+*/
+struct RomanticRelationship
 
+{
+
+};
+
+/*
 Thing 4) Soccor Team
 5 properties:
     1) Player Skill Level (double)
@@ -477,7 +498,14 @@ Thing 4) Soccor Team
     1) participate in a soccor tournament
     2) apply detailed game strategies
     3) develop motor function
+*/
+struct SoccorTeam
 
+{
+
+};
+
+/*
 Thing 5) Appendages
 5 properties:
     1) Number of Legs (int)
@@ -489,7 +517,14 @@ Thing 5) Appendages
     1) communicate long distances through vibration
     2) defend their young with their tusks
     3) eat food with their trunk
+*/
+struct Appendages
 
+{
+
+};
+
+/*
 Thing 6) Personality
 5 properties:
     1) Social Skill Level (float)
@@ -501,7 +536,14 @@ Thing 6) Personality
     1) engage in play with other elephants
     2) lead the family to food and water
     3) respond to danger with fight or flight
+*/
+struct Personality
 
+{
+
+};
+
+/*
 Thing 7) Behaviors
 5 properties:
     1) Forage (std::string)
@@ -513,7 +555,14 @@ Thing 7) Behaviors
     1) find specific plants that make up their diet
     2) teach vital survival behaviors to other elephants
     3) escape danger
+*/
+struct Behaviors
 
+{
+
+};
+
+/*
 Thing 8) Strengths
 5 properties:
     1) Body Size (char)
@@ -525,7 +574,14 @@ Thing 8) Strengths
     1) maintain family health through family bonds
     2) commands a higher place on the food chain
     3) senses weather patterns to inform travel direction
+*/
+struct Strengths
 
+{
+
+};
+
+/*
 Thing 9) Weaknesses
 5 properties:
     1) Necessary Caloric Intake Amount (double)
@@ -537,7 +593,14 @@ Thing 9) Weaknesses
     1) get swept away in a large river depending on size
     2) die of starvation
     3) pass out from overheating
+*/
+struct Weaknesses
 
+{
+
+};
+
+/*
 Thing 10) Elephant
 5 properties:
     1) Appendages
@@ -550,6 +613,11 @@ Thing 10) Elephant
     2) find food
     3) travel great distances
 */
+struct Elephant
+
+{
+
+};
 
 /*
 =================
