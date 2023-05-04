@@ -458,8 +458,11 @@ struct Restaurant
     int numHoursOpenPerWeek = 60;
     //3 things it can do:
     //    - prepare menu item meals
+    void prepareMenuMeal();
     //    - make money
+    void makeMoney();
     //    - pay taxes
+    void payTaxes();
 };
 
 /*
@@ -491,8 +494,11 @@ struct Drummer
     float durationPlay = 2.33f;
     //3 things it can do:
     //    - make music
+    void makeMusic();
     //    - apply drum set technique
+    void applyDrumSetTechnique();
     //    - create consistent body motions
+    void createConsistentBodyMotions();
 };
 
 /*
@@ -523,9 +529,12 @@ struct RomanticRelationship
     //    - number of dates
     int numbDates = 99;
     //3 things it can do:
-    //    - engage in conversation
+    //    - engage in conversation       //function parameter modifies function work
+    int engageInConversation(int setting); //returns more specific conversation type
     //    - go on a date
+    void goOnDate();
     //    - have sex
+    void haveSex();
 };
 
 /*
@@ -556,9 +565,12 @@ struct SoccorTeam
     //    - number of players
     int numPlayers = 24;
     //3 things it can do:
-    //    - participate in a soccor tournament
+    //    - participate in a soccor tournament       //function parameter informs function work
+    double participateInSoccorTournament(double teamAbility); //returns best tournament possibility
     //    - apply detailed game strategies
+    void applyDetailedGameStrategies();
     //    - develop motor function
+    void developMotorFunction();
 };
 
 /*
@@ -590,8 +602,11 @@ struct Appendages
     float tuskLength = 12.13f;
     //3 things it can do:
     //    - communicate long distances through vibration
+    void communicateLongDistancesThroughVibration();
     //    - defend their young with their tusks
+    void defendYoungWithTusks();
     //    - eat food with their trunk
+    void eatFoodWithTrunk();
 };
 
 /*
@@ -622,9 +637,12 @@ struct Personality
     //    - playfulness scale
     double playfulnessScale = 65.33f;
     //3 things it can do:
-    //    - engage in play with other elephants
+    //    - engage in play with other elephants       //function parameter informs function work
+    int engageInPlayWithOtherElephants(int numElephantsAvailable); //returns best play type available
     //    - lead the family to food and water
+    void leadFamilyToFoodWater();
     //    - respond to danger with fight or flight
+    void respondToDangerFightOrFlight();
 };
 
 /*
@@ -656,8 +674,11 @@ struct Behaviors
     float fightStrength = 44.9f;
     //3 things it can do:
     //    - find specific plants that make up their diet
+    void findSpecificPlantsThatMakeUpDiet();
     //    - teach vital survival behaviors to other elephants
+    void teachVitalSurvivalBehaviorsToOtherElephants();
     //    - escape danger
+    void escapeDanger();
 };
 
 /*
@@ -689,8 +710,11 @@ struct Strengths
     double sensePerceptionLevel = 989.4;
     //3 things it can do:
     //    - maintain family health through family bonds
+    void maintainFamilyHealthThroughFamilyBonds();
     //    - commands a higher place on the food chain
+    void commandsHigherPlaceOnFoodChain();
     //    - senses weather patterns to inform travel direction
+    void sensesWeatherPatternsToInformTravelDirection();
 };
 
 /*
@@ -721,9 +745,12 @@ struct Weaknesses
     //    - heat tolerance level
     float heatToleranceLevel = 84.6f;
     //3 things it can do:
-    //    - get swept away in a large river depending on size
+    //    - get swept away in a large river depending on size      //function parameter modifies function work
+    bool getSweptAwayInLargeRiverDependingOnSize(int sizeOfRiver); //returns if swept away by the river depending on your size and river size
     //    - die of starvation
+    void dieOfStarvation();
     //    - pass out from overheating
+    void passOutFromOverheating();
 };
 
 /*
@@ -750,8 +777,11 @@ struct Elephant
     //    - weaknesses
     //3 things it can do:
     //    - raise young
+    void raiseYoung();
     //    - find food
+    void findFood();
     //    - travel great distances
+    void travelGreatDistances();
 };
 
 /*
