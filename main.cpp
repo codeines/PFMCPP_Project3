@@ -803,17 +803,22 @@ struct Elephant
 {
     //5 properties:
     //    - appendages
+    Appendages appendages;
     //    - personality
+    Personality personality;
     //    - behaviors
+    Behaviors behaviors;
     //    - strengths
+    Strengths strengths;
     //    - weaknesses
+    Weaknesses weaknesses;
     //3 things it can do:
     //    - raise young
-    void raiseYoung();
+    float raiseYoung(float attentiveness, float parentingSkillLevel); //returns the ability to raise young
     //    - find food
-    void findFood();
+    double findFood(double resourcefulness, bool foodAvailable); //returns the ability to find food
     //    - travel great distances
-    void travelGreatDistances();
+    float travelGreatDistances(float stamina, std::string nearestSourceOfFoodOrWater); //returns the ability to travel great distances
 };
 
 /*
