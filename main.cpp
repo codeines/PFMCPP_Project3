@@ -528,14 +528,7 @@ struct RomanticRelationship
     float sexEnjoymentScale = 92.33f;
     //    - number of dates
     int numbDates = 99;
-    //3 things it can do:
-    //    - engage in conversation       //function parameter modifies function work
-    int engageInConversation(int setting); //returns more specific conversation type
-    //    - go on a date
-    void goOnDate();
-    //    - have sex
-    void haveSex();
-
+  
     struct Romance
 
     {
@@ -549,6 +542,15 @@ struct RomanticRelationship
         double engageEmotions(double intelligence, bool gender, float openness = 12.1f);
         double interpretBodyLanguage(float awareness = 38.9f, double knowledgeOfHumanBehavior = 67.32);
     };
+      //3 things it can do:
+    //    - engage in conversation       //function parameter modifies function work
+    int engageInConversation(int setting); //returns more specific conversation type
+    //    - go on a date
+    void goOnDate(Romance romance);
+    //    - have sex
+    void haveSex(Romance romance);
+
+    Romance growLove;
 };
 
 /*
@@ -578,13 +580,6 @@ struct SoccorTeam
     float amountFunding = 22000;
     //    - number of players
     int numPlayers = 24;
-    //3 things it can do:
-    //    - participate in a soccor tournament       //function parameter informs function work
-    double participateInSoccorTournament(double teamAbility); //returns best tournament possibility
-    //    - apply detailed game strategies
-    void applyDetailedGameStrategies();
-    //    - develop motor function
-    void developMotorFunction();
 
     struct Soccor
 
@@ -599,6 +594,15 @@ struct SoccorTeam
         double buildFriendships(double abilityToInvestOneself = 33.21, float likeability = 56.7f);
         float boostOrganFunction(float hydration, double energy = 12.01, float durationOfFieldTime = 7.98f);
     };
+      //3 things it can do:
+    //    - participate in a soccor tournament       //function parameter informs function work
+    double participateInSoccorTournament(double teamAbility); //returns best tournament possibility
+    //    - apply detailed game strategies
+    void applyDetailedGameStrategies(Soccor soccor);
+    //    - develop motor function
+    void developMotorFunction(Soccor soccor);
+
+    Soccor buildExperiencePlayingSoccor;
 };
 
 /*
