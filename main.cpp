@@ -535,6 +535,20 @@ struct RomanticRelationship
     void goOnDate();
     //    - have sex
     void haveSex();
+
+    struct Romance
+
+    {
+        int kissingStyle = 4;
+        int attachmentStyle = 2;
+        double experienceLevel = 33.43;
+        float communicationStyle = 12.5f;
+        double loveAttunability = 553.54;
+
+        float courtRomanticPartner(float extroversion, double presence = 22.55, float honesty = 22.3f);
+        double engageEmotions(double intelligence, bool gender, float openness = 12.1f);
+        double interpretBodyLanguage(float awareness = 38.9f, double knowledgeOfHumanBehavior = 67.32);
+    };
 };
 
 /*
@@ -571,6 +585,20 @@ struct SoccorTeam
     void applyDetailedGameStrategies();
     //    - develop motor function
     void developMotorFunction();
+
+    struct Soccor
+
+    {
+        std::string jerseyColor = "Gold";
+        float cleatSize = 10.5f;
+        char strategy = 'A';
+        double abilityToBeATeamPlayer = 12.05;
+        bool homeFieldAdvantage = true;
+
+        float releaseEndorphins(double intensityOfActivity, float levelOfPleasure, float brainFunction = 84.3f);
+        double buildFriendships(double abilityToInvestOneself = 33.21, float likeability = 56.7f);
+        float boostOrganFunction(float hydration, double energy = 12.01, float durationOfFieldTime = 7.98f);
+    };
 };
 
 /*
