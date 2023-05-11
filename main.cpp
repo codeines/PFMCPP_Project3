@@ -667,7 +667,7 @@ struct Personality
     //    - leadership propensity scale
     float leadershipPropensityScale = 66.01f;
     //    - playfulness scale
-    double playfulnessScale = 65.33f;
+    double playfulnessScale = 65.33;
     //3 things it can do:
     //    - engage in play with other elephants       //function parameter informs function work
     int engageInPlayWithOtherElephants(int numElephantsAvailable); //returns best play type available
