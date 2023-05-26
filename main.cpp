@@ -108,9 +108,53 @@ struct CarWash
     You'll need to insert the Person struct from the video in the space below.
  */
 
+struct Person
+{
+    struct Limb
+    {
+        int stepSize();
+        void stepForward();
+    };
 
+    int age;
+    int height;
+    float hairLength;
+    float GPA;
+    unsigned int SATScore;
+    Limb leftFoot;
+    Limb rightFoot;
+    int distanceTraveled;
 
+    void run(int howFast, bool startWithLeftFoot);
+};
 
+void Person::run(int howFast, bool startWithLeftFoot)
+{
+    if(startWithLeftFoot == true)
+    {
+        leftFoot.stepForward();
+        rightFoot.stepForward();
+    }
+    else
+    {
+        rightFoot.stepForward();
+        leftFoot.stepForward();
+    }
+    distanceTraveled += leftFoot.stepSize() + rightFoot.stepSize();
+    int timeRunning = distanceTraveled / howFast;
+    std::cout << "Time Spent Running" << timeRunning;
+}
+
+int Person::Limb::stepSize()
+{
+    int size = 6;
+    return size;
+}
+
+void Person::Limb::stepForward()
+{
+    std::cout << "Begin Running";
+}
 
  /*
  2) provide implementations for the member functions you declared in your 10 user-defined types from the previous video outside of your UDT definitions.
@@ -131,151 +175,148 @@ struct CarWash
  This usually means you have to use identical types for all variables used in an expression that is producing that conversion warning.
  */
 
-
-/*
-Thing 1) Restaurant
-5 properties:
-    1) Number of Menu Items (int)
-    2) Number of Staff Members (int)
-    3) Number of Customers per Week (int)
-    4) Amount of Profit per Week (double)
-    5) Number of Hours Open per Week (int)
-3 things it can do:
-    1) prepare menu item meals
-    2) make money
-    3) pay taxes
-*/
 struct Restaurant
 {
-    //5 properties:
-    //    - number of menu items
     int numMenuItems = 16;
-    //    - number of staff members
     int numStaffMembers = 6;
-    //    - number of customers per week
     int numCustomersPerWeek = 115;
-    //    - amount of profit per week
     double amountProfitPerWeek = 1123.52;
-    //    - number of hours open per week
     int numHoursOpenPerWeek = 60;
-    //3 things it can do:
-    //    - prepare menu item meals
+
     void prepareMenuMeal();
-    //    - make money
     void makeMoney();
-    //    - pay taxes
     void payTaxes();
 };
 
-/*
-Thing 2) Drummer
-5 properties:
-    1) Number of Drums (int)
-    2) Style of Music (std::string)
-    3) Tempo of the Music (float)
-    4) Number of Techniques Used (int)
-    5) Duration of Play (float)
-3 things it can do:
-    1) make music
-    2) apply drum set technique
-    3) create consistent body motions
-*/
+void Restaurant::prepareMenuMeal()
+{
+     std::cout << "Lasagna";
+}
+
+void Restaurant::makeMoney()
+{
+     std::cout << "$4000";
+}
+
+void Restaurant::payTaxes()
+{
+     std::cout << "25% tax";
+}
+
 struct Drummer
 {
-    //5 properties:
-    //    - number of drums
     int numDrums = 10;
-    //    - style of music
     std::string styleMusic = "Rock";
-    //    - tempo of the music
     float tempoMusic = 116.5f;
-    //    - number of techniques used
     int numTechniquesUsed = 5;
-    //    - duration of play
-    float durationPlay = 2.33f;
-    //3 things it can do:
-    //    - make music
+    float durationPlay = 23.3f;
+
     void makeMusic();
-    //    - apply drum set technique
     void applyDrumSetTechnique();
-    //    - create consistent body motions
     void createConsistentBodyMotions();
 };
 
-/*
-Thing 3) Romantic Relationship
-5 properties:
-    1) Number of Good Times (int)
-    2) Number of Bad Times (int)
-    3) Match Compatability Scale (float)
-    4) Sex Enjoyment Scale (float)
-    5) Number of Dates (int)
-3 things it can do:
-    1) engage in conversation
-    2) go on a date
-    3) have sex
-*/
+void Drummer::makeMusic()
+{
+     std::cout << "Play Drums";
+}
+
+void Drummer::applyDrumSetTechnique()
+{
+    std::cout << "Moeller Technqie";
+}
+
+void Drummer::createConsistentBodyMotions()
+{
+    std::cout << "Whipping Motion";
+}
+
 struct RomanticRelationship
 {
-    //5 properties:
-    //    - number of good times
-    int numGoodTimes = 88;
-    //    - number of bad times
-    int numBadTimes = 11;
-    //    - match compatability scale
-    float matchCompatabilityScale = 43.21f;
-    //    - sex enjoyment scale
-    float sexEnjoymentScale = 92.33f;
-    //    - number of dates
-    int numbDates = 99;
-  
     struct Romance
     {
         int kissingStyle = 4;
         int attachmentStyle = 2;
         double experienceLevel = 33.43;
         float communicationStyle = 12.5f;
-        double loveAttunability = 553.54;
-        float courtRomanticPartner(float extroversion, double presence = 22.55, float honesty = 22.3f);
-        double engageEmotions(double intelligence, bool gender, float openness = 12.1f);
-        double interpretBodyLanguage(float awareness = 38.9f, double knowledgeOfHumanBehavior = 67.32);
+        double loveAttunability = 553.51;
+        std::string romanceMental = "";
+        std::string romancePhysical = "";
+
+        float courtRomanticPartner(float extroversion, float presence = 22.5f, float honesty = 22.3f);
+        float engageEmotions(float intelligence, bool gender, float openness = 12.1f);
+        float interpretBodyLanguage(float awareness = 38.9f, float knowledgeOfHumanBehavior = 67.3f);
     };
-      //3 things it can do:
-    //    - engage in conversation       //function parameter modifies function work
-    int engageInConversation(int setting); //returns more specific conversation type
-    //    - go on a date
+
+    int numGoodTimes = 88;
+    int numBadTimes = 11;
+    int matchCompatabilityScale = 43;
+    int sexEnjoymentScale = 92;
+    int numDates = 99;
+
+    int engageInConversation(int setting);
     void goOnDate(Romance romance);
-    //    - have sex
     void haveSex(Romance romance);
+
     Romance growLove;
 };
 
-/*
-Thing 4) Soccor Team
-5 properties:
-    1) Player Skill Level (double)
-    2) Pool Selection Size (int)
-    3) League (std::string)
-    4) Amount of Funding (float)
-    5) Number of Players (int)
-3 things it can do:
-    1) participate in a soccor tournament
-    2) apply detailed game strategies
-    3) develop motor function
-*/
+int RomanticRelationship::engageInConversation(int setting)
+{
+    int conversationType = matchCompatabilityScale + setting;
+    std::cout << "Type of Conversation" << conversationType;
+    int type = 6;
+    return type;
+}
+
+void RomanticRelationship::goOnDate(Romance romance)
+{
+    int dateType = matchCompatabilityScale + numDates;
+    std::cout << "Date Type" << dateType;
+    std::cout << romance.romanceMental;
+}
+
+void RomanticRelationship::haveSex(Romance romance)
+{
+    int sex = sexEnjoymentScale + numGoodTimes;
+    std::cout << "Have Sex" << sex;
+    std::cout << romance.romancePhysical;
+}
+
+float RomanticRelationship::Romance::courtRomanticPartner(float extroversion, float presence, float honesty)
+{
+    float flirtAbility = extroversion + presence + honesty;
+    std::cout << "Your Ability To Flirt" << flirtAbility;
+    float court = 76.3f;
+    return court;
+}
+
+float RomanticRelationship::Romance::engageEmotions(float intelligence, bool gender, float openness)
+{
+    if(gender == true)
+    {
+        std::string genderType = "Male";
+    }
+    else
+    {
+        std::string genderType = "Female";
+    }
+    float abilityToEngageEmotions = intelligence + openness;
+    std::cout << "Your Ability To Engage Emotions" << abilityToEngageEmotions;
+    float emotion = 22.0f;
+    return emotion;
+}
+
+float RomanticRelationship::Romance::interpretBodyLanguage(float awareness, float knowledgeOfHumanBehavior)
+{
+    float abilityToInterpretBodyLanguage = awareness + knowledgeOfHumanBehavior;
+    std::cout << "Your Ability To Interpret Body Language" << abilityToInterpretBodyLanguage;
+    float bodyLanguageRead = 32.4f;
+    return bodyLanguageRead;
+}
+
 struct SoccorTeam
 {
-    //5 properties:
-    //    - player skill level
-    double playerSkillLevel = 228.12;
-    //    - pool selection size
-    int poolSelectionSize = 101;
-    //    - league
-    std::string league = "World Cup";
-    //    - amount of funding
-    float amountFunding = 22000;
-    //    - number of players
-    int numPlayers = 24;
     struct Soccor
     {
         std::string jerseyColor = "Gold";
@@ -283,229 +324,269 @@ struct SoccorTeam
         char strategy = 'A';
         double abilityToBeATeamPlayer = 12.05;
         bool homeFieldAdvantage = true;
-        float releaseEndorphins(double intensityOfActivity, float levelOfPleasure, float brainFunction = 84.3f);
-        double buildFriendships(double abilityToInvestOneself = 33.21, float likeability = 56.7f);
-        float boostOrganFunction(float hydration, double energy = 12.01, float durationOfFieldTime = 7.98f);
+        std::string soccorStrategy = "";
+        std::string soccorDevelopment = "";
+
+        float releaseEndorphins(float intensityOfActivity, float levelOfPleasure, float brainFunction = 84.3f);
+        float buildFriendships(float abilityToInvestOneself = 33.2f, float likeability = 56.7f);
+        float boostOrganFunction(float hydration, float energy = 12.0f, float durationOfFieldTime = 7.9f);
     };
-      //3 things it can do:
-    //    - participate in a soccor tournament       //function parameter informs function work
-    double participateInSoccorTournament(double teamAbility); //returns best tournament possibility
-    //    - apply detailed game strategies
+
+    int playerSkillLevel = 228;
+    int poolSelectionSize = 101;
+    std::string league = "World Cup";
+    int amountFunding = 22000;
+    int numPlayers = 24;
+
+    int participateInSoccorTournament(int teamAbility);
     void applyDetailedGameStrategies(Soccor soccor);
-    //    - develop motor function
     void developMotorFunction(Soccor soccor);
+
     Soccor buildExperiencePlayingSoccor;
 };
 
-/*
-Thing 5) Appendages
-5 properties:
-    1) Number of Legs (int)
-    2) Length of Trunk (float)
-    3) Trunk Dexterity Level (double)
-    4) Vibration Sensitivity (double)
-    5) Tusk Length (float)
-3 things it can do:
-    1) communicate long distances through vibration
-    2) defend their young with their tusks
-    3) eat food with their trunk
-*/
+int SoccorTeam::participateInSoccorTournament(int teamAbility)
+{
+    int tournamentLevel = teamAbility + amountFunding;
+    std::cout << "The Highest Qualified Tournament Level" << tournamentLevel;
+    int tournament = 15;
+    return tournament;
+}
+
+void SoccorTeam::applyDetailedGameStrategies(Soccor soccor)
+{
+    int strategy = playerSkillLevel + amountFunding;
+    std::cout << "Applied Detailed Game Strategies" << strategy;
+    std::cout << soccor.soccorStrategy;
+}
+
+void SoccorTeam::developMotorFunction(Soccor soccor)
+{
+    std::cout << soccor.soccorDevelopment;
+}
+
+float SoccorTeam::Soccor::releaseEndorphins(float intensityOfActivity, float levelOfPleasure, float brainFunction)
+{
+    float endorphinsReleased = intensityOfActivity + levelOfPleasure + brainFunction;
+    std::cout << "Your Endorphin Level" << endorphinsReleased;
+    float endorphinLevel = 87.4f;
+    return endorphinLevel;
+}
+
+float SoccorTeam::Soccor::buildFriendships(float abilityToInvestOneself, float likeability)
+{
+    float friendshipsBuilt = abilityToInvestOneself + likeability;
+    std::cout << "The Depth Of Connection In Your Friendships" << friendshipsBuilt;
+    float friendships = 43.1f;
+    return friendships;
+}
+
+float SoccorTeam::Soccor::boostOrganFunction(float hydration, float energy, float durationOfFieldTime)
+{
+    float organFunction = hydration + energy + durationOfFieldTime;
+    std::cout << "Maximum Level Of Organ Function" << organFunction;
+    float organHealth = 92.1f;
+    return organHealth;
+}
+
 struct Appendages
 {
-    //5 properties:
-    //    - number of legs
     int numLegs = 4;
-    //    - length of trunk
-    float lengthTrunk = 14.76f;
-    //    - trunk dexterity level
+    float lengthTrunk = 14.7f;
     double trunkDexterityLevel = 555.42;
-    //    - vibration sensitivity
     double vibrationSensitivity = 773.12;
-    //    - tusk length
-    float tuskLength = 12.13f;
-    //3 things it can do:
-    //    - communicate long distances through vibration
+    float tuskLength = 12.1f;
+
     void communicateLongDistancesThroughVibration();
-    //    - defend their young with their tusks
     void defendYoungWithTusks();
-    //    - eat food with their trunk
     void eatFoodWithTrunk();
 };
 
-/*
-Thing 6) Personality
-5 properties:
-    1) Social Skill Level (float)
-    2) Intelligence Level (double)
-    3) Number of Strong Bonds with Other Elephants (int)
-    4) Leadership Propensity Scale (float)
-    5) Playfulness Scale (double)
-3 things it can do:
-    1) engage in play with other elephants
-    2) lead the family to food and water
-    3) respond to danger with fight or flight
-*/
+void Appendages::communicateLongDistancesThroughVibration()
+{
+    std::cout << "Sense Vibration";
+}
+
+void Appendages::defendYoungWithTusks()
+{
+    std::cout << "Defense Stance";
+}
+
+void Appendages::eatFoodWithTrunk()
+{
+    std::cout << "Pull Leaves From The Tree";
+}
+
 struct Personality
 {
-    //5 properties:
-    //    - social skill level
-    float socialSkillLevel = 54.1f;
-    //    - intelligence level
+    int socialSkillLevel = 54;
     double intelligenceLevel = 84.11;
-    //    - number of strong bonds with other elephants
     int numStrongBondsWithOtherElephants = 4;
-    //    - leadership propensity scale
-    float leadershipPropensityScale = 66.01f;
-    //    - playfulness scale
+    float leadershipPropensityScale = 66.0f;
     double playfulnessScale = 65.33;
-    //3 things it can do:
-    //    - engage in play with other elephants       //function parameter informs function work
-    int engageInPlayWithOtherElephants(int numElephantsAvailable); //returns best play type available
-    //    - lead the family to food and water
+
+    int engageInPlayWithOtherElephants(int numElephantsAvailable);
     void leadFamilyToFoodWater();
-    //    - respond to danger with fight or flight
     void respondToDangerFightOrFlight();
 };
 
-/*
-Thing 7) Behaviors
-5 properties:
-    1) Forage (std::string)
-    2) Run Speed (int)
-    3) Teaching Abilitiy Level (double)
-    4) Learning Ability Level (double)
-    5) Fight Strength (float)
-3 things it can do:
-    1) find specific plants that make up their diet
-    2) teach vital survival behaviors to other elephants
-    3) escape danger
-*/
+int Personality::engageInPlayWithOtherElephants(int numElephantsAvailable)
+{
+    int playStyle = numElephantsAvailable + socialSkillLevel;
+    std::cout << "Style Of Play Possible" << playStyle;
+    int style = 14;
+    return style;
+}
+
+void Personality::leadFamilyToFoodWater()
+{
+    std::cout << "Begin Trail To Food And Water";
+}
+
+void Personality::respondToDangerFightOrFlight()
+{
+    std::cout << "Prepare For Action";
+}
+
 struct Behaviors
 {
-    //5 properties:
-    //    - forage
     std::string forage = "Leaves";
-    //    - run speed
     int runSpeed = 11;
-    //    - teaching abilitiy level
     double teachingAbilityLevel = 90.09;
-    //    - learning ability level
     double learningAbilityLevel = 77.88;
-    //    - fight strength
     float fightStrength = 44.9f;
-    //3 things it can do:
-    //    - find specific plants that make up their diet
+
     void findSpecificPlantsThatMakeUpDiet();
-    //    - teach vital survival behaviors to other elephants
     void teachVitalSurvivalBehaviorsToOtherElephants();
-    //    - escape danger
     void escapeDanger();
 };
 
-/*
-Thing 8) Strengths
-5 properties:
-    1) Body Size (char)
-    2) Elemental Resistance (float)
-    3) Level of Bond Strength (float)
-    4) Communication Method (std::string)
-    5) Sense Perception Level (double)
-3 things it can do:
-    1) maintain family health through family bonds
-    2) commands a higher place on the food chain
-    3) senses weather patterns to inform travel direction
-*/
+void Behaviors::findSpecificPlantsThatMakeUpDiet()
+{
+    std::cout << "Tree Matches Knowledge Archetype";
+}
+
+void Behaviors::teachVitalSurvivalBehaviorsToOtherElephants()
+{
+    std::cout << "How To Cross A River";
+}
+
+void Behaviors::escapeDanger()
+{
+    std::cout << "Run!";
+}
+
 struct Strengths
 {
-    //5 properties:
-    //    - body size
     char bodySize = 'A';
-    //    - elemental resistance
     float elementalResistance = 667.5f;
-    //    - level of bond strength
-    float levelBondStrenth = 45.43f;
-    //    - communication method
+    float levelBondStrenth = 45.4f;
     std::string communicationMethod = "Modeling";
-    //    - sense perception level
-    double sensePerceptionLevel = 989.4;
-    //3 things it can do:
-    //    - maintain family health through family bonds
+    double sensePerceptionLevel = 989.41;
+
     void maintainFamilyHealthThroughFamilyBonds();
-    //    - commands a higher place on the food chain
     void commandsHigherPlaceOnFoodChain();
-    //    - senses weather patterns to inform travel direction
     void sensesWeatherPatternsToInformTravelDirection();
 };
 
-/*
-Thing 9) Weaknesses
-5 properties:
-    1) Necessary Caloric Intake Amount (double)
-    2) Likeliness to be Swept Away by a River (float)
-    3) Number of Broken Tusks (int)
-    4) Required Number of Learned Behaviors for Survival (int)
-    5) Heat Tolerance Level (float)
-3 things it can do:
-    1) get swept away in a large river depending on size
-    2) die of starvation
-    3) pass out from overheating
-*/
+void Strengths::maintainFamilyHealthThroughFamilyBonds()
+{
+    std::cout << "Caress Family Member";
+}
+
+void Strengths::commandsHigherPlaceOnFoodChain()
+{
+    std::cout << "Only The Deadliest Predators Are A Threat";
+}
+
+void Strengths::sensesWeatherPatternsToInformTravelDirection()
+{
+    std::cout << "Storm Coming From The East";
+}
+
 struct Weaknesses
 {
-    //5 properties:
-    //    - necessary caloric intake amount
-    double necessaryCaloricIntakeAmount = 2250.5;
-    //    - likeliness to be swept away by a river
-    float likelinessSweptAwayByRiver = 43.11f;
-    //    - number of broken tusks
+    double necessaryCaloricIntakeAmount = 2250.51;
+    float likelinessSweptAwayByRiver = 43.1f;
     int numBrokenTusks = 1;
-    //    - required number of learned behaviors for survival
     int requiredNumberLearnedBehaviorsForSurvival = 15;
-    //    - heat tolerance level
     float heatToleranceLevel = 84.6f;
-    //3 things it can do:
-    //    - get swept away in a large river depending on size      //function parameter modifies function work
-    bool getSweptAwayInLargeRiverDependingOnSize(int sizeOfRiver); //returns if swept away by the river depending on your size and river size
-    //    - die of starvation
+    int bodySize;
+
+    bool getSweptAwayInLargeRiverDependingOnSize(int sizeOfRiver);
     void dieOfStarvation();
-    //    - pass out from overheating
     void passOutFromOverheating();
 };
 
-/*
-Thing 10) Elephant
-5 properties:
-    1) Appendages
-    2) Personality
-    3) Behaviors
-    4) Strengths
-    5) Weaknesses
-3 things it can do:
-    1) raise young
-    2) find food
-    3) travel great distances
-*/
+bool Weaknesses::getSweptAwayInLargeRiverDependingOnSize(int sizeOfRiver)
+{
+    if(sizeOfRiver - bodySize >= 40 == true)
+    {
+        std::cout << "Get Swept Away By River";
+    }
+    else
+    {
+        std::cout << "Cross River Safely";
+    }
+    bool getSweptAway = true;
+    return getSweptAway;
+}
+
+void Weaknesses::dieOfStarvation()
+{
+    std::cout << "You Died";
+}
+
+void Weaknesses::passOutFromOverheating()
+{
+    std::cout << "You Passed Out";
+}
+
 struct Elephant
 {
-    //5 properties:
-    //    - appendages
     Appendages appendages;
-    //    - personality
     Personality personality;
-    //    - behaviors
     Behaviors behaviors;
-    //    - strengths
     Strengths strengths;
-    //    - weaknesses
     Weaknesses weaknesses;
-    //3 things it can do:
-    //    - raise young
-    float raiseYoung(float attentiveness, float parentingSkillLevel); //returns the ability to raise young
-    //    - find food
-    double findFood(double resourcefulness, bool foodAvailable); //returns the ability to find food
-    //    - travel great distances
-    float travelGreatDistances(float stamina, std::string nearestSourceOfFoodOrWater); //returns the ability to travel great distances
+    double abilityToFindFood;
+    double amountOfFoodAvailable;
+    float travelTime;
+
+    float raiseYoung(float attentiveness, float parentingSkillLevel); 
+    double findFood(double resourcefulness, bool foodAvailable); 
+    float travelGreatDistances(float stamina);
 };
+
+float Elephant::raiseYoung(float attentiveness, float parentingSkillLevel)
+{
+    float abilityToRaiseYoung = attentiveness + parentingSkillLevel;
+    std::cout << "Your Quality Of Parenting" << abilityToRaiseYoung;
+    float offspringHealth = 26.5f;
+    return offspringHealth;
+}
+
+double Elephant::findFood(double resourcefulness, bool foodAvailable)
+{
+    if(foodAvailable == true)
+    {
+       abilityToFindFood = resourcefulness + amountOfFoodAvailable;
+    }
+    else
+    {
+        abilityToFindFood = 00.00;
+    }
+    double successRate = 55.23;
+    return successRate;
+}
+
+float Elephant::travelGreatDistances(float stamina)
+{
+    float distanceTraveled = stamina + travelTime;
+    std::cout << "How Far You Traveled" << distanceTraveled;
+    float distance = 78.6f;
+    return distance;
+}
 
 int main()
 {
