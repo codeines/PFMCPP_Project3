@@ -263,32 +263,26 @@ struct RomanticRelationship
 
 int RomanticRelationship::engageInConversation(int setting)
 {
-    int conversationType = matchCompatabilityScale + setting;
-    std::cout << "Type of Conversation" << conversationType;
-    int type = 6;
-    return type;
+    std::cout << "Type of Conversation" << (matchCompatabilityScale + setting);
+    return 6;
 }
 
 void RomanticRelationship::goOnDate(Romance romance)
 {
-    int dateType = matchCompatabilityScale + numDates;
-    std::cout << "Date Type" << dateType;
+    std::cout << "Date Type" << (matchCompatabilityScale + numDates);
     std::cout << romance.romanceMental;
 }
 
 void RomanticRelationship::haveSex(Romance romance)
 {
-    int sex = sexEnjoymentScale + numGoodTimes;
-    std::cout << "Have Sex" << sex;
+    std::cout << "Have Sex" << (sexEnjoymentScale + numGoodTimes);
     std::cout << romance.romancePhysical;
 }
 
 float RomanticRelationship::Romance::courtRomanticPartner(float extroversion, float presence, float honesty)
 {
-    float flirtAbility = extroversion + presence + honesty;
-    std::cout << "Your Ability To Flirt" << flirtAbility;
-    float court = 76.3f;
-    return court;
+    std::cout << "Your Ability To Flirt" << (extroversion + presence + honesty);
+    return 76.3f;
 }
 
 float RomanticRelationship::Romance::engageEmotions(float intelligence, bool gender, float openness)
@@ -301,18 +295,14 @@ float RomanticRelationship::Romance::engageEmotions(float intelligence, bool gen
     {
         std::string genderType = "Female";
     }
-    float abilityToEngageEmotions = intelligence + openness;
-    std::cout << "Your Ability To Engage Emotions" << abilityToEngageEmotions;
-    float emotion = 22.0f;
-    return emotion;
+    std::cout << "Your Ability To Engage Emotions" << (intelligence + openness);
+    return 22.0f;
 }
 
 float RomanticRelationship::Romance::interpretBodyLanguage(float awareness, float knowledgeOfHumanBehavior)
 {
-    float abilityToInterpretBodyLanguage = awareness + knowledgeOfHumanBehavior;
-    std::cout << "Your Ability To Interpret Body Language" << abilityToInterpretBodyLanguage;
-    float bodyLanguageRead = 32.4f;
-    return bodyLanguageRead;
+    std::cout << "Your Ability To Interpret Body Language" << (awareness + knowledgeOfHumanBehavior);
+    return 32.4f;
 }
 
 struct SoccorTeam
@@ -347,16 +337,13 @@ struct SoccorTeam
 
 int SoccorTeam::participateInSoccorTournament(int teamAbility)
 {
-    int tournamentLevel = teamAbility + amountFunding;
-    std::cout << "The Highest Qualified Tournament Level" << tournamentLevel;
-    int tournament = 15;
-    return tournament;
+    std::cout << "The Highest Qualified Tournament Level" << (teamAbility + amountFunding);
+    return 15;
 }
 
 void SoccorTeam::applyDetailedGameStrategies(Soccor soccor)
 {
-    int strategy = playerSkillLevel + amountFunding;
-    std::cout << "Applied Detailed Game Strategies" << strategy;
+    std::cout << "Applied Detailed Game Strategies" << (playerSkillLevel + amountFunding);
     std::cout << soccor.soccorStrategy;
 }
 
@@ -367,26 +354,20 @@ void SoccorTeam::developMotorFunction(Soccor soccor)
 
 float SoccorTeam::Soccor::releaseEndorphins(float intensityOfActivity, float levelOfPleasure, float brainFunction)
 {
-    float endorphinsReleased = intensityOfActivity + levelOfPleasure + brainFunction;
-    std::cout << "Your Endorphin Level" << endorphinsReleased;
-    float endorphinLevel = 87.4f;
-    return endorphinLevel;
+    std::cout << "Your Endorphin Level" << (intensityOfActivity + levelOfPleasure + brainFunction);
+    return 87.4f;
 }
 
 float SoccorTeam::Soccor::buildFriendships(float abilityToInvestOneself, float likeability)
 {
-    float friendshipsBuilt = abilityToInvestOneself + likeability;
-    std::cout << "The Depth Of Connection In Your Friendships" << friendshipsBuilt;
-    float friendships = 43.1f;
-    return friendships;
+    std::cout << "The Depth Of Connection In Your Friendships" << (abilityToInvestOneself + likeability);
+    return 43.1f;
 }
 
 float SoccorTeam::Soccor::boostOrganFunction(float hydration, float energy, float durationOfFieldTime)
 {
-    float organFunction = hydration + energy + durationOfFieldTime;
-    std::cout << "Maximum Level Of Organ Function" << organFunction;
-    float organHealth = 92.1f;
-    return organHealth;
+    std::cout << "Maximum Level Of Organ Function" << (hydration + energy + durationOfFieldTime);
+    return 92.1f;
 }
 
 struct Appendages
@@ -432,10 +413,8 @@ struct Personality
 
 int Personality::engageInPlayWithOtherElephants(int numElephantsAvailable)
 {
-    int playStyle = numElephantsAvailable + socialSkillLevel;
-    std::cout << "Style Of Play Possible" << playStyle;
-    int style = 14;
-    return style;
+    std::cout << "Style Of Play Possible" << (numElephantsAvailable + socialSkillLevel);
+    return 14;
 }
 
 void Personality::leadFamilyToFoodWater()
@@ -528,8 +507,7 @@ bool Weaknesses::getSweptAwayInLargeRiverDependingOnSize(int sizeOfRiver)
     {
         std::cout << "Cross River Safely";
     }
-    bool getSweptAway = true;
-    return getSweptAway;
+    return true;
 }
 
 void Weaknesses::dieOfStarvation()
@@ -560,10 +538,8 @@ struct Elephant
 
 float Elephant::raiseYoung(float attentiveness, float parentingSkillLevel)
 {
-    float abilityToRaiseYoung = attentiveness + parentingSkillLevel;
-    std::cout << "Your Quality Of Parenting" << abilityToRaiseYoung;
-    float offspringHealth = 26.5f;
-    return offspringHealth;
+    std::cout << "Your Quality Of Parenting" << (attentiveness + parentingSkillLevel);
+    return 26.5f;
 }
 
 double Elephant::findFood(double resourcefulness, bool foodAvailable)
@@ -576,16 +552,13 @@ double Elephant::findFood(double resourcefulness, bool foodAvailable)
     {
         abilityToFindFood = 00.00;
     }
-    double successRate = 55.23;
-    return successRate;
+    return 55.23;
 }
 
 float Elephant::travelGreatDistances(float stamina)
 {
-    float distanceTraveled = stamina + travelTime;
-    std::cout << "How Far You Traveled" << distanceTraveled;
-    float distance = 78.6f;
-    return distance;
+    std::cout << "How Far You Traveled" << (stamina + travelTime);
+    return 78.6f;
 }
 
 int main()
